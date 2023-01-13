@@ -1,4 +1,4 @@
-import { GPTCard, Home, Navbar } from "./containers"
+import { Features, GPTCard, Home, Navbar } from "./containers"
 
 function App() {
   return (
@@ -11,7 +11,9 @@ function App() {
       </div>
       <div className="mx-[120px] mt-[50px] mb-[20px]">
         <GPTCard />
+        <Features />
       </div>
+
     </section>
   );
 }

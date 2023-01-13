@@ -1,7 +1,7 @@
 import React from 'react'
 
 import { ai, people } from '../assets'
-import {Brands} from '../containers'
+import { Brands } from '../containers'
 
 export default function Home() {
     return (
@@ -17,7 +17,8 @@ export default function Home() {
                         Yet bed any for travelling assistance indulgence unpleasing. Not thoughts all exercise blessing. Indulgence way everything joy alteration boisterous the attachment. Party we years to order allow asked of.
                     </p>
                     <span className='flex mt-[35px]'>
-                        <input className='w-[70%] bg-inputFieldCustom text-textCustom text-[20px] py-[20px] px-[30px] capitalize outline-none rounded-l-[5px]'
+                        <input
+                            className='placeholder:text-textCustom w-[70%] bg-inputFieldCustom text-textCustom text-[20px] py-[20px] px-[30px] outline-none rounded-l-[5px]'
                             placeholder='Your Email Address'
                             type="email" />
                         <button className='bg-buttonSignCustom py-[20px] px-[30px] text-white text-[20px] font-medium rounded-r-[5px]'>
