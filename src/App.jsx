@@ -1,4 +1,4 @@
-import { Brands, GPTCard, Home, Navbar } from "./containers"
+import { GPTCard, Home, Navbar } from "./containers"
 
 function App() {
   return (
@@ -10,7 +10,6 @@ function App() {
         </div>
       </div>
       <div className="mx-[120px] mt-[50px] mb-[20px]">
-        <Brands />
         <GPTCard />
       </div>
     </section>
