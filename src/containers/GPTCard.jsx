@@ -1,6 +1,6 @@
 import React from 'react'
 import { Feature } from '../containers'
-import { features } from '../data/constants'
+import {featuresCard } from '../data/constants'
 
 
 export default function GPTCard() {
@@ -8,13 +8,14 @@ export default function GPTCard() {
         <section id='gpt' className='mt-[100px]'>
             <div className='bg-footerCustom card__gpt3 py-[80px] px-[70px]'>
                 <Feature
-                    key={features[0].id}
-                    title={features[0].title}
-                    text={features[0].body}
-                    style={`w-[70%]`}
-                    containerStyle={`flex justify-between`} />
+                    key={featuresCard[0].id}
+                    title={featuresCard[0].title}
+                    text={featuresCard[0].body}
+                    containerStyle={`flex justify-between`}
+                    titleStyle={`text-white text-[25px] font-bold mt-[10px]`} 
+                    paragraphStyle={`text-textCustom text-[18px] w-[70%]`} />
                 <div className='flex justify-between items-center my-[70px]'>
-                    <h1 className='text-[35px] font-bold gradient__text leading-[45px]'>
+                    <h1 className='gradient__text text-[35px] font-bold leading-[45px]'>
                         The possibilities are beyond <br />
                         your imagination
                     </h1>
@@ -24,7 +25,7 @@ export default function GPTCard() {
                     </a>
                 </div>
                 <div className='flex'>
-                    {features.map((feature, index) => (
+                    {featuresCard.map((feature, index) => (
                         index === 0 ?
                             null
                             :
@@ -32,7 +33,9 @@ export default function GPTCard() {
                                 key={feature.id}
                                 title={feature.title}
                                 text={feature.body}
-                                containerStyle={`w-1/3 ${index !== features.length - 1 ? "mr-[40px]" : "mr-0"}`} />
+                                containerStyle={`w-1/3 ${index !== featuresCard.length - 1 ? "mr-[40px]" : "mr-0"}`}
+                                titleStyle={`text-white text-[25px] font-bold mt-[10px]`} 
+                                paragraphStyle={`text-textCustom text-[18px] w-[70%]`} />
                     ))}
                 </div>
             </div>
