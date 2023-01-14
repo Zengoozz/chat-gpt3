@@ -8,10 +8,12 @@ module.exports = {
       colors: {
         primaryCustom: "#040C18",
         textCustom: "#81AFDD",
-        buttonSignCustom: '#FF4820;',
-        inputFieldCustom: '#052D56;',
+        buttonSignCustom: '#FF4820',
+        inputFieldCustom: '#052D56',
         footerCustom: '#031B34',
-        subTextCustom: "#FF8A71;"
+        subTextCustom: "#FF8A71",
+        oneUseCustom: "#71E5FF",
+        articleBgCustom: "#042C54",
       },
       fontFamily: {
         manrope: ["Manrope", "sans-serif"],
