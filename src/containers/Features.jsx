@@ -14,7 +14,7 @@ export default function Features() {
                         & Make it Happen.
                     </h1>
                     <a className='text-subTextCustom hover:underline'
-                        href="#request">
+                        href="#CTA">
                         Request Early Access to Get Started
                     </a>
                 </div>
