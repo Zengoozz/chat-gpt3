@@ -10,6 +10,20 @@ export default function Navbar() {
 
     const [toggle, setToggle] = useState(false)
 
+    const hoverSignIn = () => {
+        const signinBtn = document.getElementById('signin');
+        const signupBtn = document.getElementById('signup');
+        signupBtn.classList.remove('bg-buttonSignCustom')
+        signinBtn.classList.add('bg-buttonSignCustom')
+    }
+
+    const hoverSignUp = () => {
+        const signinBtn = document.getElementById('signin');
+        const signupBtn = document.getElementById('signup');
+        signinBtn.classList.remove('bg-buttonSignCustom')
+        signupBtn.classList.add('bg-buttonSignCustom')
+    }
+
     return (
         <section className='text-white'>
             <div className='flex flex-1 items-center md:justify-start justify-between '>
@@ -30,26 +44,34 @@ export default function Navbar() {
                     }
                 </div>
                 <div className='md:block hidden'>
-                    <button className='font-medium text-[18px]'>
+                    <button onMouseOver={() => hoverSignIn()}
+                        id='signin'
+                        className='font-medium text-[18px] px-12 py-4 rounded-[5px]'>
                         Sign in
                     </button>
-                    <button className='ml-[30px] font-medium text-[18px] bg-buttonSignCustom px-12 py-4 rounded-[5px]'>
+                    <button onMouseOver={() => hoverSignUp()}
+                        id='signup'
+                        className='ml-[30px] font-medium text-[18px] bg-buttonSignCustom px-12 py-4 rounded-[5px]'>
                         Sign up
                     </button>
                 </div>
                 <div className='relative md:hidden flex'>
                     <div className='md:hidden block mr-[20px]'>
-                        <button className='font-medium text-[15px]'>
+                        <button onClick={() => hoverSignIn()}
+                            id='signin'
+                            className='font-medium text-[15px] px-[10px] py-[5px] rounded-[5px]'>
                             Sign in
                         </button>
-                        <button className='ml-[20px] font-medium text-[15px] bg-buttonSignCustom 
+                        <button onClick={() => hoverSignUp()}
+                            id='signup'
+                            className='ml-[20px] font-medium text-[15px] bg-buttonSignCustom 
                             px-[10px] py-[5px] rounded-[5px]'>
                             Sign up
                         </button>
                     </div>
                     <button onClick={() => setToggle(prevState => !prevState)}>
-                        <img className='w-[20px] h-[20px] object-contain' 
-                            src={toggle ? close : menu} alt= {toggle ? "close" : "menu"} />
+                        <img className='w-[20px] h-[20px] object-contain'
+                            src={toggle ? close : menu} alt={toggle ? "close" : "menu"} />
                     </button>
                     <div
                         className={`card__gpt3 absolute right-[10px] top-[40px] min-w-[150px] rounded-[10px] py-[10px] px-[20px]
