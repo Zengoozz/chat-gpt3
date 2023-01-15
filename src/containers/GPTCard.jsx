@@ -5,7 +5,7 @@ import {featuresCard } from '../data/constants'
 
 export default function GPTCard() {
     return (
-        <section id='gpt' className='ss:mt-[100px] mt-[50px]'>
+        <section id='gpt' className='mt-[100px]'>
             <div className='bg-footerCustom card__gpt3 ss:py-[80px] ss:px-[70px] p-[40px]'>
                 <Feature
                     key={featuresCard[0].id}
