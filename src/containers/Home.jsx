@@ -6,7 +6,7 @@ import { Brands } from '../containers'
 export default function Home() {
     return (
         <section id='home' >
-            <div className='flex flex-1 ss:flex-row flex-col'>
+            <div className='flex flex-1 ss:flex-row justify-between flex-col'>
                 <div className='ss:mt-[115px] mt-[50px]'>
                     <h1 className='gradient__text font-bold text-[60px] leading-[70px]'>
                         Let’s Build Something <br />
@@ -35,7 +35,7 @@ export default function Home() {
                     </div>
                 </div>
                 <div>
-                    <img className='ss:absolute static w-[700px] ss:right-[2%]'
+                    <img className='lg:absolute static lg:w-[700px] w-[600px] lg:right-[2%]'
                         src={ai} alt="ai" />
                 </div>
             </div>

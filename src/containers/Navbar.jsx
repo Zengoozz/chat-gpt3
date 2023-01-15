@@ -12,11 +12,11 @@ export default function Navbar() {
 
     return (
         <section className='text-white'>
-            <div className='flex flex-1 items-center ss:justify-start justify-between '>
+            <div className='flex flex-1 items-center md:justify-start justify-between '>
                 <h1 className='font-black text-[20px] leading-8'>
                     GPT-3
                 </h1>
-                <div className='ss:flex hidden flex-1 ml-[70px]'>
+                <div className='md:flex hidden flex-1 ml-[70px]'>
                     {
                         navLinks.map((link, index) => (
                             <span className={`${index !== 0 ? "ml-[55px]" : "ml-0"}`}
@@ -29,7 +29,7 @@ export default function Navbar() {
                         ))
                     }
                 </div>
-                <div className='ss:block hidden'>
+                <div className='md:block hidden'>
                     <button className='font-medium text-[18px]'>
                         Sign in
                     </button>
@@ -37,8 +37,8 @@ export default function Navbar() {
                         Sign up
                     </button>
                 </div>
-                <div className='relative ss:hidden flex'>
-                    <div className='ss:hidden block mr-[20px]'>
+                <div className='relative md:hidden flex'>
+                    <div className='md:hidden block mr-[20px]'>
                         <button className='font-medium text-[15px]'>
                             Sign in
                         </button>
@@ -48,7 +48,7 @@ export default function Navbar() {
                         </button>
                     </div>
                     <button onClick={() => setToggle(prevState => !prevState)}>
-                        <img className='w-[30px] h-[30px] object-contain' 
+                        <img className='w-[20px] h-[20px] object-contain' 
                             src={toggle ? close : menu} alt= {toggle ? "close" : "menu"} />
                     </button>
                     <div

@@ -16,20 +16,20 @@ export default function Footer() {
                     </button>
                 </div>
             </div>
-            <div className='flex sm:flex-row flex-col sm:items-start items-center sm:px-[80px] px-0 text-white'>
-                <div className='sm:block flex flex-col items-center sm:max-w-[170px]'>
+            <div className='flex md:flex-row flex-col md:items-start items-center md:px-[80px] px-0 text-white'>
+                <div className='md:block flex flex-col items-center md:max-w-[170px]'>
                     <a className='font-black text-[45px] leading-[40px]'
-                    href='#home'>
+                        href='#home'>
                         GPT-3
                     </a>
                     <p className='mt-[15px] text-[12px]'>
                         Crechterwoord K12 182 DK Alknjkcb, All Rights Reserved
                     </p>
                 </div>
-                <div className='sm:ml-[220px] ml-0 sm:mt-0 mt-[20px] flex '>
+                <div className='md:ml-[220px] ml-0 md:mt-0 mt-[20px] flex justify-between'>
                     {
                         footerSections.map((sec, index) => (
-                            <div className={`${index !== 0 ? "sm:ml-[150px] ml-[20px]" : "ml-0"} min-w-[120px]`}
+                            <div className={`${index !== 0 ? "lg:ml-[150px] ss:ml-[100px] ml-[50px]" : "ml-0"} md:min-w-[120px]`}
                                 key={sec.id}>
                                 <h4 className='font-semibold text-[15px] mb-[30px] capitalize'>
                                     {sec.text}
@@ -37,7 +37,7 @@ export default function Footer() {
                                 <div className='flex flex-col'>
                                     {sec.items.map((item, index) => (
                                         <a className='text-[10px] font-medium mb-[25px] capitalize hover:underline'
-                                        href={`#${item}`}>
+                                            href={`#${item}`}>
                                             {item}
                                         </a>
                                     ))}
