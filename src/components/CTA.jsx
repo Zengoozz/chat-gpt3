@@ -3,7 +3,7 @@ import React from 'react'
 export default function CTA() {
   return (
     <section id="CTA">
-      <div className='ss:my-[150px] my-[50px] ss:text-left text-center'>
+      <div className='ss:mt-[150px] mt-[50px] ss:text-left text-center'>
         <div className='flex ss:flex-row flex-col flex-1 items-center ss:justify-between
                   bar__gradient ss:p-[50px] p-[30px] rounded-[10px]'>
           <div>
