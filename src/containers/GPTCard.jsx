@@ -16,7 +16,7 @@ export default function GPTCard() {
                     paragraphStyle={`text-textCustom text-[18px] ss:w-[70%]`} />
                 <div className='flex ss:flex-row flex-col justify-between items-center ss:my-[70px] my-[30px]'>
                     <h1 className='gradient__text text-[35px] font-bold leading-[45px]'>
-                        The possibilities are beyond <br />
+                        The possibilities are beyond <br className='ss:block hidden'/>
                         your imagination
                     </h1>
                     <a className='capitalize text-subTextCustom ss:mt-0 mt-[10px] hover:underline'
