@@ -15,7 +15,8 @@ export default function CTA() {
             </h2>
           </div>
           <button className='bg-black text-white font-bold py-[15px] px-[40px] 
-                      rounded-[40px] text-[18px] ss:mt-0 mt-[10px]'>
+                      rounded-[40px] text-[18px] ss:mt-0 mt-[10px] border-black border-[2px]
+                      hover:bg-transparent hover:text-black hover:border-[2px] hover:border-black'>
             Get Started
           </button>
         </div>

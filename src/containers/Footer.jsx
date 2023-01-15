@@ -11,7 +11,8 @@ export default function Footer() {
                             Do you want to step in to the future before others
                         </h1>
                     </span>
-                    <button className='mt-[65px] text-white font-semibold p-5 border-[1px]'>
+                    <button className='mt-[65px] text-white font-semibold p-5 border-[1px]
+                            hover:bg-white hover:text-footerCustom hover:font-bold'>
                         Request Early Access
                     </button>
                 </div>
