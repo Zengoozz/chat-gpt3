@@ -4,7 +4,7 @@ import { footerSections } from '../data/constants'
 export default function Footer() {
     return (
         <section id='library'>
-            <div className='py-[170px]'>
+            <div className='ss:py-[170px] py-[50px]'>
                 <div className='flex flex-col items-center justify-center'>
                     <span className='max-w-[850px]'>
                         <h1 className='gradient__text font-black text-[60px] leading-[70px] text-center'>
@@ -16,9 +16,9 @@ export default function Footer() {
                     </button>
                 </div>
             </div>
-            <div className='flex px-[80px] text-white'>
-                <div className='max-w-[170px]'>
-                    <a className=' font-black text-[45px] leading-[40px]'
+            <div className='flex sm:flex-row flex-col sm:items-start items-center sm:px-[80px] px-0 text-white'>
+                <div className='sm:block flex flex-col items-center sm:max-w-[170px]'>
+                    <a className='font-black text-[45px] leading-[40px]'
                     href='#home'>
                         GPT-3
                     </a>
@@ -26,10 +26,10 @@ export default function Footer() {
                         Crechterwoord K12 182 DK Alknjkcb, All Rights Reserved
                     </p>
                 </div>
-                <div className='ml-[220px] flex'>
+                <div className='sm:ml-[220px] ml-0 sm:mt-0 mt-[20px] flex '>
                     {
                         footerSections.map((sec, index) => (
-                            <div className={`${index !== 0 ? "ml-[150px]" : "ml-0"} min-w-[120px]`}
+                            <div className={`${index !== 0 ? "sm:ml-[150px] ml-[20px]" : "ml-0"} min-w-[120px]`}
                                 key={sec.id}>
                                 <h4 className='font-semibold text-[15px] mb-[30px] capitalize'>
                                     {sec.text}

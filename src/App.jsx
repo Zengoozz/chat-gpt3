@@ -16,8 +16,8 @@ function App() {
         <CTA />
         <Blog />
       </div>
-      <div className="bg-footerCustom ss:mt-[50px] mt-[20px]">
-        <div className="mx-[120px] mb-[5px]">
+      <div className="bg-footerCustom ss:mt-[100px] mt-[50px]">
+        <div className="ss:mx-[120px] mx-[20px] mb-[5px]">
           <Footer />
         </div>
       </div>
