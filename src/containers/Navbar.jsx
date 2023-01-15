@@ -1,4 +1,5 @@
-import React from 'react'
+import React, { useState } from 'react'
+import { close, menu } from '../assets'
 
 import { navLinks } from '../data/constants'
 
@@ -6,13 +7,16 @@ import { navLinks } from '../data/constants'
 
 
 export default function Navbar() {
+
+    const [toggle, setToggle] = useState(false)
+
     return (
         <section className='text-white'>
-            <div className='flex flex-1 items-center'>
+            <div className='flex flex-1 items-center ss:justify-start justify-between '>
                 <h1 className='font-black text-[20px] leading-8'>
                     GPT-3
                 </h1>
-                <div className='flex flex-1 ml-[70px]'>
+                <div className='ss:flex hidden flex-1 ml-[70px]'>
                     {
                         navLinks.map((link, index) => (
                             <span className={`${index !== 0 ? "ml-[55px]" : "ml-0"}`}
@@ -25,12 +29,17 @@ export default function Navbar() {
                         ))
                     }
                 </div>
-                <div>
+                <div className='ss:block hidden'>
                     <button className='font-medium text-[18px]'>
                         Sign in
                     </button>
                     <button className='ml-[30px] font-medium text-[18px] bg-buttonSignCustom px-12 py-4 rounded-[5px]'>
                         Sign up
+                    </button>
+                </div>
+                <div className='ss:hidden block'>
+                    <button onClick={() => setToggle(prevState => !prevState)}>
+                        <img src={toggle ? close : menu} alt="" />
                     </button>
                 </div>
             </div>

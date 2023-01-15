@@ -4,7 +4,7 @@ function App() {
   return (
     <section className="bg-primaryCustom min-h-[100vh] flex flex-col font-manrope">
       <div className="gradient__bg">
-        <div className="mx-[120px] mt-[50px]">
+        <div className="ss:mx-[120px] mx-[20px] ss:mt-[50px] mt-[20px]">
           <Navbar />
           <Home />
         </div>

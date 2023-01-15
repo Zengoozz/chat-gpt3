@@ -12,9 +12,26 @@ import people from "./people.png"
 import possibility from "./possibility.png"
 import shopify from "./shopify.png"
 import slack from "./slack.png"
+import close from "./close.svg"
 import logoSVG from "./logo.svg"
+import menu from "./menu.svg"
 
 export {
-    ai, atlassian, blog01, blog02, blog03, blog04, blog05,
-    dropbox, google, logoPNG, logoSVG, people, possibility, shopify, slack
+    ai,
+    atlassian,
+    blog01,
+    blog02,
+    blog03,
+    blog04,
+    blog05,
+    dropbox,
+    google,
+    logoPNG,
+    logoSVG,
+    people,
+    possibility,
+    shopify,
+    slack,
+    menu,
+    close
 }
