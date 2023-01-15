@@ -20,8 +20,8 @@ module.exports = {
       },
     },
     screens: {
-      xs: "480px",
       ss: "720px",
+      sm: "1000px",
       md: "1300px",
       lg: "1500px",
       xl: "1700px",
