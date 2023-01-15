@@ -19,10 +19,10 @@ export default function Home() {
                     <span className='flex mt-[35px]'>
                         <input
                             className='placeholder:text-textCustom w-[70%] bg-inputFieldCustom text-textCustom 
-                                ss:text-[20px] text-[18px] ss:py-[20px] py-[10px] px-[30px] outline-none rounded-l-[5px]'
+                                ss:text-[20px] text-[18px] ss:py-[20px] py-[5px] ss:px-[30px] px-[20px] outline-none rounded-l-[5px]'
                             placeholder='Your Email Address'
                             type="email" />
-                        <button className='bg-buttonSignCustom ss:py-[20px] py-[10px] px-[30px] text-white 
+                        <button className='bg-buttonSignCustom ss:py-[20px] py-[5px] ss:px-[30px] px-[20px] text-white 
                                     ss:text-[20px] text-[18px] font-medium rounded-r-[5px]'>
                             Get Started
                         </button>
