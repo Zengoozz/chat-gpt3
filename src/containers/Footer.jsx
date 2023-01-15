@@ -36,7 +36,8 @@ export default function Footer() {
                                 </h4>
                                 <div className='flex flex-col'>
                                     {sec.items.map((item, index) => (
-                                        <a className='text-[10px] font-medium mb-[25px] capitalize hover:underline'
+                                        <a key={item + index}
+                                            className='text-[10px] font-medium mb-[25px] capitalize hover:underline'
                                             href={`#${item}`}>
                                             {item}
                                         </a>
