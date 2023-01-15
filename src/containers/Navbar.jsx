@@ -37,11 +37,27 @@ export default function Navbar() {
                         Sign up
                     </button>
                 </div>
-                <div className='ss:hidden block'>
+                <div className='relative ss:hidden block'>
                     <button onClick={() => setToggle(prevState => !prevState)}>
                         <img src={toggle ? close : menu} alt="" />
                     </button>
+                    <div
+                        className={`card__gpt3 absolute right-[10px] top-[20px]
+                        ${toggle ? "flex flex-col items-center" : "hidden"}`}>
+                        {
+                            navLinks.map((link, index) => (
+                                <span className={`${index !== 0 ? "ml-[55px]" : "ml-0"}`}
+                                    key={link.id}>
+                                    <a className='font-medium text-[18px] hover:underline'
+                                        href={`#${link.id}`}>
+                                        {link.title}
+                                    </a>
+                                </span>
+                            ))
+                        }
+                    </div>
                 </div>
+
             </div>
         </section>
     )
