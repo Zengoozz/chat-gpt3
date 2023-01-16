@@ -24,6 +24,20 @@ export default function Navbar() {
         signupBtn.classList.add('bg-buttonSignCustom')
     }
 
+    const hoverSignInMob = () => {
+        const signinBtn = document.getElementById('signinMob');
+        const signupBtn = document.getElementById('signupMob');
+        signupBtn.classList.remove('bg-buttonSignCustom')
+        signinBtn.classList.add('bg-buttonSignCustom')
+    }
+
+    const hoverSignUpMob = () => {
+        const signinBtn = document.getElementById('signinMob');
+        const signupBtn = document.getElementById('signupMob');
+        signinBtn.classList.remove('bg-buttonSignCustom')
+        signupBtn.classList.add('bg-buttonSignCustom')
+    }
+
     return (
         <section className='text-white'>
             <div className='flex flex-1 items-center md:justify-start justify-between '>
@@ -44,12 +58,12 @@ export default function Navbar() {
                     }
                 </div>
                 <div className='md:block hidden'>
-                    <button onMouseOver={() => hoverSignIn()}
+                    <button onMouseOver={hoverSignIn}
                         id='signin'
                         className='font-medium text-[18px] px-12 py-4 rounded-[5px]'>
                         Sign in
                     </button>
-                    <button onMouseOver={() => hoverSignUp()}
+                    <button onMouseOver={hoverSignUp}
                         id='signup'
                         className='ml-[30px] font-medium text-[18px] bg-buttonSignCustom px-12 py-4 rounded-[5px]'>
                         Sign up
@@ -57,13 +71,13 @@ export default function Navbar() {
                 </div>
                 <div className='relative md:hidden flex'>
                     <div className='md:hidden block mr-[20px]'>
-                        <button onClick={() => hoverSignIn()}
-                            id='signin'
+                        <button onMouseOver={hoverSignInMob}
+                            id='signinMob'
                             className='font-medium text-[15px] px-[10px] py-[5px] rounded-[5px]'>
                             Sign in
                         </button>
-                        <button onClick={() => hoverSignUp()}
-                            id='signup'
+                        <button onMouseOver={hoverSignUpMob}
+                            id='signupMob'
                             className='ml-[20px] font-medium text-[15px] bg-buttonSignCustom 
                             px-[10px] py-[5px] rounded-[5px]'>
                             Sign up
@@ -74,11 +88,13 @@ export default function Navbar() {
                             src={toggle ? close : menu} alt={toggle ? "close" : "menu"} />
                     </button>
                     <div
-                        className={`card__gpt3 absolute right-[10px] top-[40px] min-w-[150px] rounded-[10px] py-[10px] px-[20px]
+                        className={`card__gpt3 absolute right-[10px] top-[40px] min-w-[150px] 
+                        rounded-[10px] py-[10px] px-[20px]
                         ${toggle ? "flex flex-col items-center" : "hidden"}`}>
                         {
                             navLinks.map((link, index) => (
-                                <span className={`${index !== 0 ? "mt-[15px]" : "mt-0"}`}
+                                <span
+                                    className={`${index !== 0 ? "mt-[15px]" : "mt-0"} hover:text-subTextCustom`}
                                     key={link.id}>
                                     <a className='font-medium text-[18px]'
                                         href={`#${link.id}`}>

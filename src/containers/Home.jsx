@@ -6,7 +6,7 @@ import { Brands } from '../containers'
 export default function Home() {
     return (
         <section id='home' >
-            <div className='flex flex-1 ss:flex-row justify-between flex-col'>
+            <div className='flex flex-1 ss:flex-row justify-between items-center flex-col'>
                 <div className='ss:mt-[115px] mt-[50px]'>
                     <h1 className='gradient__text font-bold text-[60px] leading-[70px]'>
                         Let’s Build Something <br />
@@ -19,10 +19,10 @@ export default function Home() {
                     <span className='flex mt-[35px]'>
                         <input
                             className='placeholder:text-textCustom w-[70%] bg-inputFieldCustom text-textCustom 
-                                ss:text-[20px] text-[18px] ss:py-[20px] py-[5px] ss:px-[30px] px-[20px] outline-none rounded-l-[5px]'
+                                ss:text-[20px] text-[18px] ss:py-[20px] py-[10px] ss:px-[30px] px-[20px] outline-none rounded-l-[5px]'
                             placeholder='Your Email Address'
                             type="email" />
-                        <button className='bg-buttonSignCustom ss:py-[20px] py-[5px] ss:px-[30px] px-[20px] text-white 
+                        <button className='bg-buttonSignCustom ss:py-[20px] py-[10px] ss:px-[30px] px-[20px] text-white 
                                     ss:text-[20px] text-[18px] font-medium rounded-r-[5px]'>
                             Get Started
                         </button>
@@ -35,7 +35,7 @@ export default function Home() {
                     </div>
                 </div>
                 <div>
-                    <img className='lg:absolute static lg:w-[700px] w-[600px] lg:right-[2%]'
+                    <img className='w-[600px]'
                         src={ai} alt="ai" />
                 </div>
             </div>
