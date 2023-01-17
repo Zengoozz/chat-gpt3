@@ -10,7 +10,8 @@ export default function Features() {
                     <h1 className='gradient__text text-[35px] font-bold leading-[45px] mb-[30px]'>
                         The Future is Now and <br className='ss:block hidden'/>
                         You Just Need To Realize <br className='ss:block hidden'/>
-                        It. Step into Future Today <br className='ss:block hidden'/>
+                        It. <br className='ss:hidden block'/> 
+                        Step into Future Today <br className='ss:block hidden'/>
                         & Make it Happen.
                     </h1>
                     <a className='text-subTextCustom hover:underline'

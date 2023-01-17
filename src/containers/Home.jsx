@@ -7,15 +7,19 @@ export default function Home() {
     return (
         <section id='home' >
             <div className='flex flex-1 ss:flex-row justify-between items-center flex-col'>
+
                 <div className='ss:mt-[115px] mt-[50px]'>
+
                     <h1 className='gradient__text font-bold text-[60px] leading-[70px]'>
-                        Let’s Build Something <br />
-                        amazing with GPT-3 <br />
+                        Let’s Build Something <br className='ss:block hidden' />
+                        amazing with GPT-3 <br className='ss:block hidden' />
                         OpenAI
                     </h1>
+
                     <p className='text-textCustom text-[20px] max-w-[550px] mt-[35px]'>
                         Yet bed any for travelling assistance indulgence unpleasing. Not thoughts all exercise blessing. Indulgence way everything joy alteration boisterous the attachment. Party we years to order allow asked of.
                     </p>
+
                     <span className='flex mt-[35px]'>
                         <input
                             className='placeholder:text-textCustom w-[70%] bg-inputFieldCustom text-textCustom 
@@ -27,6 +31,7 @@ export default function Home() {
                             Get Started
                         </button>
                     </span>
+
                     <div className='flex ss:flex-row flex-col items-center ss:mb-0 mb-[10px] mt-[35px]'>
                         <img src={people} alt="people" />
                         <p className='text-white text-[12px] ss:mt-0 mt-[10px] ml-[15px]'>
@@ -34,12 +39,15 @@ export default function Home() {
                         </p>
                     </div>
                 </div>
+
                 <div>
-                    <img className='w-[600px]'
+                    <img className='ss:relative ss:-right-5 ss:-top-20 md:-top-0 static w-[570px]'
                         src={ai} alt="ai" />
                 </div>
             </div>
+
             <Brands />
+
         </section>
     )
 }

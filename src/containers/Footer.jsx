@@ -4,7 +4,9 @@ import { footerSections } from '../data/constants'
 export default function Footer() {
     return (
         <section id='library'>
+
             <div className='ss:py-[170px] py-[50px]'>
+
                 <div className='flex flex-col items-center justify-center'>
                     <span className='max-w-[850px]'>
                         <h1 className='gradient__text font-black text-[60px] leading-[70px] text-center'>
@@ -17,6 +19,7 @@ export default function Footer() {
                     </button>
                 </div>
             </div>
+
             <div className='flex md:flex-row flex-col md:items-start items-center md:px-[80px] px-0 text-white'>
                 <div className='md:block flex flex-col items-center md:max-w-[170px]'>
                     <a className='font-black text-[45px] leading-[40px]'
@@ -27,6 +30,7 @@ export default function Footer() {
                         Crechterwoord K12 182 DK Alknjkcb, All Rights Reserved
                     </p>
                 </div>
+
                 <div className='md:ml-[220px] ml-0 md:mt-0 mt-[20px] flex justify-between'>
                     {
                         footerSections.map((sec, index) => (
@@ -49,9 +53,12 @@ export default function Footer() {
                     }
                 </div>
             </div>
-            <p className='flex justify-center text-white mt-[35px] text-[12px]'>
-                © 2021 GPT-3. All rights reserved.
-            </p>
+
+            <div className='flex justify-center'>
+                <p className='text-white mt-[35px] text-[12px]'>
+                    © 2021 GPT-3. All rights reserved.
+                </p>
+            </div>
         </section>
     )
 }
