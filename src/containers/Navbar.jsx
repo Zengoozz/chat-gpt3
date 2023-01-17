@@ -76,7 +76,9 @@ export default function Navbar() {
                         className={`card__gpt3 absolute right-[10px] top-[40px] min-w-[150px] 
                         rounded-[10px] py-[10px] px-[20px]
                         ${toggle ? "flex flex-col items-center" : "hidden"}`}>
-                        <NavSections marginStyle='mt-[15px]' />
+                        <NavSections 
+                        marginStyle='mt-[15px]' 
+                        clickLink={() => {setToggle(prevState => !prevState)}}/>
                     </div>
                 </div>
 
