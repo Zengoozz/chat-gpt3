@@ -9,6 +9,8 @@ import Article from "../components/Article";
 import Brands from "../components/Brands";
 import CTA from "../components/CTA";
 import Feature from "../components/Feature";
+import SignButtons from "../components/SignButtons";
+import NavSections from "../components/NavSections";
 
 export {
     Navbar,
@@ -21,5 +23,7 @@ export {
     CTA,
     Blog,
     Article,
-    Footer
+    Footer,
+    SignButtons,
+    NavSections
 }
